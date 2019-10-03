@@ -58,7 +58,7 @@ public class InputAndExecution {
                     break;
                 case "-a":
                     try {
-                        toDoObject.addNewTask(inputFromUser.substring(3));
+                        toDoObject.addNewTask(inputFromUser.trim().substring(3));
                         break;
                     } catch (StringIndexOutOfBoundsException e) {
                         System.out.println("Unable to add: no task provided!");
@@ -66,7 +66,7 @@ public class InputAndExecution {
                     }
                 case "-r":
                     try {
-                        toDoObject.removeTask(Integer.parseInt(inputFromUser.substring(3)));
+                        toDoObject.removeTask(Integer.parseInt(inputFromUser.trim().substring(3)));
                         break;
                     } catch (StringIndexOutOfBoundsException e) {
                         System.out.println("No index provided!");
@@ -80,7 +80,7 @@ public class InputAndExecution {
                     }
                 case "-c":
                     try {
-                        toDoObject.completeTask(Integer.parseInt(inputFromUser.substring(3)));
+                        toDoObject.completeTask(Integer.parseInt(inputFromUser.trim().substring(3)));
                         break;
                     } catch (StringIndexOutOfBoundsException e) {
                         System.out.println("No index provided!");

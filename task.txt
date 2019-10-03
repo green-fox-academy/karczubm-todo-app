@@ -1,3 +1,3 @@
-0Buy milk
-0Do homework
+1Buy milk
+1Do homework
 0Pass exam
